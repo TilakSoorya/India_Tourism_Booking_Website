@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+	background:url('..//payment.jpg');
+	background-repeat:no-repeat;
+	background-size:1500px 750px;
+}
+.header1{
+	text-align:center;
+	color:#2979FF;
+}
+.container{
+	padding:20px;
+	margin-top:70px;
+	margin-left:12%;
+	margin-bottom:20px;
+	background-color: #fff;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	box-shadow: 0 2.8px 2.2px rgba(0,0,0,0.034).0 6.7px 5.3px rgba(0,0,0,0.048);
+	overflow:hidden;
+	width: calc(100vw-65vw);
+	max-width: 30%
+}
+.contact{
+	border: 1rem solid;
+}
+
+.form{
+	padding: 10px;
+}
+.form-control{
+	margin-bottom: 30px;
+	position: relative;
+}
+.form-control label {
+	color:#2979FF;
+    font-weight: bolder;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+	width: 100%;
+	border: 2px solid #E8EAF6;
+	border-radius: 5px;
+	font-family:'Montserrat', sans-serif;
+	font-size: 14px;
+	padding: 10px;
+}
+.form-control input focus{
+	outline: 0;
+	border-color: #777;
+}
+.form-control.success input{
+	border-color: #2ecc71;
+}
+.form-control.error input{
+	border-color: #e74c3c;
+}
+.form-control i {
+	position: absolute;
+	right: 8px;
+	top: 40px;
+	visibility: hidden;
+}
+.form-control.success i.fa-check-circle{
+	color: #2ecc71;
+	visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+	color: #e74c3c;
+	visibility: visible;
+}
+.form-control small{
+	color: #e74c3c;
+	position: absolute;
+	left: 0;
+	top: 70px;
+	visibility: hidden;
+}
+.form-control.error small{
+	visibility: visible;
+
+}
+
+.form .btn{
+	background: #2979FF;
+	border-radius: 6px;
+	border: none;
+	outline: none;
+	color: #fff;
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	padding: 15px 0;
+	margin-top: 20px;
+	width: 100%;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.form .btn:hover{
+	background:#BBDEFB;
+    color: #2979FF;
+	border:2px solid #2979FF;
+}
+@media(max-width: 998px){
+	.container{
+		width: calc(100vw-35vw);
+		max-width: 100%;
+	}
+}
+.form2{
+	padding:20px;
+	margin-top:120px;
+	margin-left:20%;
+	font-weight: bold;
+	margin-bottom:20px;
+	background-color: #fff;
+	border-radius: 10px;
+	width: 30%;
+	color: #2979FF;;
+	height:500px;
+  
+}
+.form2 p{
+	color:#000;
+}
+.form2 .header1 h2{
+	color:#2979ff ;
+}
+.display{
+	display: flex;
+}  
+.form2 .labels{
+	color:black;
+	display: inline;
+}

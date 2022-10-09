@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="..//project/css/login.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="header">
+        <h1>ExploreIndia</h1>
+        <ul class= "nav">
+          <li><a href="index.php">Home</a></li>
+          <li><a href="Destinations.php">Destinations</a></li>
+          <li><a href="about.php">About Us</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <h1>Login</h1>
+        <div id=error></div>
+    <form id="myform" action="log.php" method="POST" onsubmit="return validate()">
+        <div class="inputfield">
+            <input type="text" name="uname" placeholder="User Name" id="name" autocomplete="off">
+        </div>
+        <div class="inputfield">
+            <input type="password" placeholder="Password" name="pass" id="password" autocomplete="off">
+        </div>
+        <div class="btn">
+            <input type="submit" name="log" value="Login">
+        </div><br>
+    <a href="forgot.php">Forgot Password?</a><br>
+    New to this Website?<a href="signup.html">Sign Up</a>
+</form>
+    </div>
+    <footer class="footer">
+        <div class="fcontainer">
+            <div class="row">
+                <div class="column">
+                    <h4>Info</h4>
+                    <ul>
+                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="terms.html">Privacy Policy</a></li>
+                        <li><a href="contact.php">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Booking</h4>
+                    <ul>
+                        <li><a href="Booking.php">Booking</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="north.php">North India</a></li>
+                        <li><a href="east.php">East India</a></li>
+                        <li><a href="west.php">West India</a></li>
+                        <li><a href="south.php">South India</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/login?lang=en"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </footer>
+</body>
+</html>
+<script>
+    function validate(){
+    var name=document.getElementById("name").value;
+    var password=document.getElementById("password").value;
+    var error=document.getElementById("error");
+
+    error.style.padding="10px";
+    
+    if(name.length<3){
+        text ="Please Enter a Valid UserName.";
+        error.innerHTML =text;
+        return false;
+    }
+    if(password <1){
+        text ="Please Enter Password";
+        error.innerHTML =text;
+        return false;
+    }
+
+    
+}
+</script>

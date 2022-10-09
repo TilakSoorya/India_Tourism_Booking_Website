@@ -1,0 +1,50 @@
+body{
+
+    width: 1300px;
+    height: 700px;
+    background:black;
+    background-size: 100%100%;
+}
+
+
+
+.wrapper{
+
+    width: 400px;
+
+    height: 400px;
+
+    margin:35%;
+
+    margin-top: 130px;
+
+    position: fixed;
+
+    background-color: #8BC6EC;
+
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+    opacity: .9;
+
+    padding: 27px 15px;
+
+}
+
+form .login
+
+{
+
+    margin: auto 50px;
+
+}
+
+input
+
+{
+
+    height: 25px;
+
+    width: 300px;
+
+}
+

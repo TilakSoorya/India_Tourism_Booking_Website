@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.testimonials{
+    width: 100%;
+    margin: auto;
+    padding: 100px;
+    text-align: center;
+    background: #283593;
+}
+.testimonial-col{
+
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    display: flex;
+    background: #C5CAE9;
+    cursor: pointer;
+    padding: 25px;
+}
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
